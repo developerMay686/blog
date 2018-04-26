@@ -148,9 +148,9 @@
       <category term="tools" scheme="http://yoursite.com/categories/tools/"/>
     
     
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
-    
       <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
     
       <category term="vscode" scheme="http://yoursite.com/tags/vscode/"/>
     
