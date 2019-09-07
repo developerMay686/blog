@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 
@@ -429,12 +430,23 @@
 <p>处理这种回文我们只需将字符串反转再进行对比，就可以得到结果啦：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">palindrome</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> string = str.replace(<span class="regexp">/[\W_]/g</span>, <span class="string">''</span>).toLowerCase();</span><br><span class="line">  <span class="keyword">var</span> replaceStr = string</span><br><span class="line">    .split(<span class="string">''</span>)</span><br><span class="line">    .reverse()</span><br><span class="line">    .join(<span class="string">''</span>);</span><br><span class="line">  <span class="keyword">return</span> replaceStr === string;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">palindrome(<span class="string">'eye'</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
 
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <h3 id="首个单词字母大写"><a href="#首个单词字母大写" class="headerlink" title="首个单词字母大写"></a>首个单词字母大写</h3><blockquote>
 <p>Title Case a Sentence(首个单词字母大写)</p>
 </blockquote>
 <p>句中单词首字母大写, 确保字符串的每个单词首字母都大写，其余部分小写。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">titleCase</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> str.toLowerCase().replace(<span class="regexp">/( |^)[a-z]/g</span>, <span class="function"><span class="keyword">function</span>(<span class="params">L</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> L.toUpperCase();</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">titleCase(<span class="string">"I'm a little tea pot"</span>); <span class="comment">// I'm A Little Tea Pot</span></span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <blockquote>
 <p>思路</p>
 </blockquote>
@@ -444,7 +456,14 @@
 </blockquote>
 <p>找出多个数组中的最大数,并返回一个新数组</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">largestOfFour</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 请把你的代码写在这里</span></span><br><span class="line">  <span class="keyword">var</span> count = [];</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> a = arr[i].sort(<span class="function"><span class="keyword">function</span>(<span class="params">a, b</span>) </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> b - a;</span><br><span class="line">    &#125;);</span><br><span class="line">    count.push(a[<span class="number">0</span>]);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">largestOfFour([</span><br><span class="line">  [<span class="number">4</span>, <span class="number">5</span>, <span class="number">1</span>, <span class="number">3</span>],</span><br><span class="line">  [<span class="number">13</span>, <span class="number">27</span>, <span class="number">18</span>, <span class="number">26</span>],</span><br><span class="line">  [<span class="number">32</span>, <span class="number">35</span>, <span class="number">37</span>, <span class="number">39</span>],</span><br><span class="line">  [<span class="number">1000</span>, <span class="number">1001</span>, <span class="number">857</span>, <span class="number">1</span>]</span><br><span class="line">]); <span class="comment">// [5,27,39,1001]</span></span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <blockquote>
 <p>思路</p>
 </blockquote>
@@ -454,7 +473,14 @@
 </blockquote>
 <p>检查字符串结尾,判断一个字符串(str)是否以指定的字符串(target)结尾, 返回一个布尔值。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">confirmEnding</span>(<span class="params">str, target</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> lenth = str.length - target.length;</span><br><span class="line">  <span class="keyword">return</span> str.substr(lenth) === target</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">confirmEnding(<span class="string">'Connor'</span>, <span class="string">'n'</span>); <span class="comment">// false</span></span><br><span class="line">confirmEnding(<span class="string">'Bastian'</span>, <span class="string">'n'</span>); <span class="comment">// true</span></span><br><span class="line">confirmEnding(<span class="string">'He has to give me a new name'</span>, <span class="string">'me'</span>); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <blockquote>
 <p>思路</p>
 </blockquote>
@@ -470,7 +496,14 @@
 </li>
 <li><p>while</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">repeat</span>(<span class="params">str, num</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="string">''</span>;</span><br><span class="line">  <span class="keyword">while</span> (num &gt; <span class="number">0</span>) &#123;</span><br><span class="line">    s += str;</span><br><span class="line">    num--;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> s;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">repeat(<span class="string">'abc'</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 </li>
 </ul>
 <blockquote>
@@ -482,13 +515,27 @@
 </blockquote>
 <p>截断字符串,如果字符串的长度比指定的参数 num 长，则把多余的部分用…来表示。<br>插入到字符串尾部的三个点号也会计入字符串的长度。如果指定的参数 num 小于或等于 3，则添加的三个点号不会计入字符串的长度。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">truncate</span>(<span class="params">str, num</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 首先判断num的值是不是大于字符串的长度,若是,那就没有必要省略了.</span></span><br><span class="line">  <span class="keyword">if</span> (num &gt;= str.length) &#123;</span><br><span class="line">    <span class="keyword">return</span> str;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (num &lt;= <span class="number">3</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> str.slice(<span class="number">0</span>, num) + <span class="string">'...'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> str.slice(<span class="number">0</span>, num - <span class="number">3</span>) + <span class="string">'...'</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'A-tisket a-tasket A green and yellow basket'</span>;</span><br><span class="line"></span><br><span class="line">truncate(str, str.length);</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <h3 id="分割数组"><a href="#分割数组" class="headerlink" title="分割数组"></a>分割数组</h3><blockquote>
 <p>Chunky Monkey(分割数组)</p>
 </blockquote>
 <p>猴子吃香蕉, 分割数组,把一个数组 arr 按照指定的数组大小<code>size</code>分割成若干个数组块。例如:</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hunk([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>],<span class="number">2</span>) =&gt; [[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>]];</span><br><span class="line">chunk([<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>],<span class="number">2</span>) =&gt; [[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">3</span>,<span class="number">4</span>],[<span class="number">5</span>]];</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <blockquote>
 <p>思路</p>
 </blockquote>
@@ -502,7 +549,14 @@
 </li>
 <li><p>while + slice</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// while + slice</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">chunk</span>(<span class="params">arr, size</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> a = [],</span><br><span class="line">    t = [],</span><br><span class="line">    i = <span class="number">0</span>,</span><br><span class="line">    len = arr.length;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (i &lt; len) &#123;</span><br><span class="line">    <span class="comment">// 查询的值</span></span><br><span class="line">    t = arr.slice(i, (i += size));</span><br><span class="line">    a.push(t);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">chunk([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>], <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 </li>
 </ol>
 <h3 id="过滤数组假值"><a href="#过滤数组假值" class="headerlink" title="过滤数组假值"></a>过滤数组假值</h3><blockquote>
@@ -513,19 +567,42 @@
 <p>一开始我走进了一个误区，想着单纯<code>return x !== false &amp;&amp; ...</code>这样简单的返回就可以了，后来发现在处理<code>NaN</code>时会很麻烦..<code>isNaN()</code>还会把英文字符串也给过滤掉,再加上多个<code>&amp;&amp;</code>使得代码会变得繁乱,可读性不高.</p>
 <p>然后查阅了一番资料后,才注意到平时被忽略<code>Boolean()</code>的一些特性对于处理这种类型的问题简直不能太合适.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">bouncer</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 请把你的代码写在这里</span></span><br><span class="line">  <span class="keyword">var</span> a = arr.filter(<span class="function"><span class="keyword">function</span>(<span class="params">x</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">Boolean</span>(x);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bouncer([<span class="number">7</span>, <span class="string">'ate'</span>, <span class="string">''</span>, <span class="literal">false</span>, <span class="number">9</span>]);</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<p><strong>摘至<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean" target="_blank" rel="noopener">MDN.Boolean</a> 的描述:</strong></p>
+<blockquote>
+<p>如果 Boolean 构造函数的参数不是一个布尔值,则该参数会被转换成一个布尔值.<strong>如果参数是 0, -0, null, false, NaN, undefined, 或者空字符串 (“”),生成的 Boolean 对象的值为 false. </strong>其他任何值,包括任何对象或者字符串”false”, 都会创建一个值为 true 的 Boolean 对象.</p>
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
 <p><strong>摘至<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvQm9vbGVhbg==" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Boolean">MDN.Boolean<i class="fa fa-external-link"></i></span> 的描述:</strong></p>
 <blockquote>
 <p>如果 Boolean 构造函数的参数不是一个布尔值,则该参数会被转换成一个布尔值.*<em>如果参数是 0, -0, null, false, NaN, undefined, 或者空字符串 (“”),生成的 Boolean 对象的值为 false. *</em>其他任何值,包括任何对象或者字符串”false”, 都会创建一个值为 true 的 Boolean 对象.</p>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 </blockquote>
 <h3 id="摧毁指定数组"><a href="#摧毁指定数组" class="headerlink" title="摧毁指定数组"></a>摧毁指定数组</h3><p>Seek and Destroy (摧毁指定数组)</p>
 <p>实现一个摧毁(destroyer)函数，第一个参数是待摧毁的数组，其余的参数是待摧毁的值。</p>
 <blockquote>
 <p>实现原理</p>
 </blockquote>
+<<<<<<< HEAD
 <p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvQXJyYXkvZmlsdGVy" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()<i class="fa fa-external-link"></i></span> 为数组中的每个元素调用一次 <code>callback</code>函数，并利用所有使得 <code>callback</code> 返回 true 或 等价于 true 的值 的元素创建一个<strong>新数组.</strong><br><code>filter()</code>从头至尾遍历数组,<strong>若回调函数返回的是 true(通过测试),就存入新数组中.若返回的是 false,则过滤掉.</strong></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">destroyer</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 先将第一个参数隔开,定义一个储存着待移除的空数组</span></span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">arguments</span>[<span class="number">0</span>], removeArgs = [];</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 要被删除的参数装进'removeArgs'里</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">    removeArgs.push(<span class="built_in">arguments</span>[i]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 遍历'args',若'removeArgs'中不存在'value',应该返回-1.反之返回false被过滤掉.</span></span><br><span class="line">  <span class="keyword">return</span> args.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> removeArgs.indexOf(value) === <span class="number">-1</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">destroyer([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="number">2</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
 
+=======
+<<<<<<< HEAD
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank" rel="noopener">filter()</a> 为数组中的每个元素调用一次 <code>callback</code>函数，并利用所有使得 <code>callback</code> 返回 true 或 等价于 true 的值 的元素创建一个<strong>新数组.</strong><br><code>filter()</code>从头至尾遍历数组,<strong>若回调函数返回的是 true(通过测试),就存入新数组中.若返回的是 false,则过滤掉.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">destroyer</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 先将第一个参数隔开,定义一个储存着待移除的空数组</span></span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">arguments</span>[<span class="number">0</span>], removeArgs = [];</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 要被删除的参数装进'removeArgs'里</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">    removeArgs.push(<span class="built_in">arguments</span>[i]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 遍历'args',若'removeArgs'中不存在'value',应该返回-1.反之返回false被过滤掉.</span></span><br><span class="line">  <span class="keyword">return</span> args.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> removeArgs.indexOf(value) === <span class="number">-1</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">destroyer([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="number">2</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+=======
+<p><span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIubW96aWxsYS5vcmcvemgtQ04vZG9jcy9XZWIvSmF2YVNjcmlwdC9SZWZlcmVuY2UvR2xvYmFsX09iamVjdHMvQXJyYXkvZmlsdGVy" title="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter">filter()<i class="fa fa-external-link"></i></span> 为数组中的每个元素调用一次 <code>callback</code>函数，并利用所有使得 <code>callback</code> 返回 true 或 等价于 true 的值 的元素创建一个<strong>新数组.</strong><br><code>filter()</code>从头至尾遍历数组,<strong>若回调函数返回的是 true(通过测试),就存入新数组中.若返回的是 false,则过滤掉.</strong></p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">destroyer</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// 先将第一个参数隔开,定义一个储存着待移除的空数组</span></span><br><span class="line">  <span class="keyword">var</span> args = <span class="built_in">arguments</span>[<span class="number">0</span>], removeArgs = [];</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 要被删除的参数装进'removeArgs'里</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">1</span>; i &lt; <span class="built_in">arguments</span>.length; i++) &#123;</span><br><span class="line">    removeArgs.push(<span class="built_in">arguments</span>[i]);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 遍历'args',若'removeArgs'中不存在'value',应该返回-1.反之返回false被过滤掉.</span></span><br><span class="line">  <span class="keyword">return</span> args.filter(<span class="function"><span class="keyword">function</span>(<span class="params">value</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> removeArgs.indexOf(value) === <span class="number">-1</span>;</span><br><span class="line">  &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">destroyer([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="number">2</span>, <span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <h3 id="数组排序并找出元素索引"><a href="#数组排序并找出元素索引" class="headerlink" title="数组排序并找出元素索引"></a>数组排序并找出元素索引</h3><blockquote>
 <p>Where do I belong (数组排序并找出元素索引)</p>
 </blockquote>
@@ -554,12 +631,128 @@
 </ul>
 <p>ROT13 的功能就是移位,如果序号小于 78(A-M 字母)，使用 String.fromCharCode()转换成该序号加 13 的字符,反之减 13.</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">rot13</span>(<span class="params">str</span>) </span>&#123;</span><br><span class="line">  <span class="comment">// LBH QVQ VG!</span></span><br><span class="line">  <span class="keyword">var</span> newStr = [];</span><br><span class="line"></span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; str.length; i++) &#123;</span><br><span class="line">    <span class="comment">// 查询每个字符串的Unicode编号</span></span><br><span class="line">    <span class="keyword">var</span> temp = str.charCodeAt(i);</span><br><span class="line">    <span class="comment">// 非大写字母,空格,数字等都不转换</span></span><br><span class="line">    <span class="keyword">if</span> (temp &lt; <span class="number">65</span> || temp &gt; <span class="number">91</span>) &#123;</span><br><span class="line">      newStr.push(str.charAt(i));</span><br><span class="line">      <span class="keyword">continue</span>;</span><br><span class="line"></span><br><span class="line">      <span class="comment">// 大于77(N-Z),就转换成该序号 - 13的字符串.</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> (temp &gt; <span class="number">77</span>) &#123;</span><br><span class="line">      newStr.push(<span class="built_in">String</span>.fromCharCode(temp - <span class="number">13</span>));</span><br><span class="line">      <span class="comment">// 小于78(A-M),就转换成该序号 + 13的字符串</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      newStr.push(<span class="built_in">String</span>.fromCharCode(temp + <span class="number">13</span>));</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> newStr.join(<span class="string">''</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">rot13(<span class="string">'SERR PBQR PNZC'</span>); <span class="comment">// 你可以修改这一行来测试你的代码</span></span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 <h3 id="Sum-All-Numbers-in-a-Range"><a href="#Sum-All-Numbers-in-a-Range" class="headerlink" title="Sum All Numbers in a Range"></a>Sum All Numbers in a Range</h3><blockquote>
 <p>题目描述</p>
 </blockquote>
 <p>&emsp;&emsp;传递给一个包含两个数字的数组。返回这两个数字和<strong>它们之间所有数字的和</strong>。最小的数字并非总在最前面。<br>比如传递<code>[1, 4]</code>会返回<code>10</code>, 即<code>1 + 2 + 3 + 4</code>.</p>
 <h4 id="非数组方法"><a href="#非数组方法" class="headerlink" title="非数组方法"></a>非数组方法</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">sumAll</span>(<span class="params">arr</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> max = <span class="built_in">Math</span>.max.apply(<span class="literal">null</span>, arr);</span><br><span class="line">  <span class="keyword">var</span> min = <span class="built_in">Math</span>.min.apply(<span class="literal">null</span>,arr);</span><br><span class="line">  <span class="keyword">var</span> num = max - min;</span><br><span class="line">  <span class="keyword">var</span> total = min;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span>(num) &#123;</span><br><span class="line">    num--;</span><br><span class="line">    total += ++min;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> total;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">sumAll([<span class="number">1</span>, <span class="number">1</span>]);</span><br></pre></td></tr></table></figure>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding:10px 0;margin:20px auto;width:90%;text-align:center">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick='var qr=document.getElementById("QR");"none"===qr.style.display?qr.style.display="block":qr.style.display="none"'>
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display:none">
+      
+        <div id="wechat" style="display:inline-block">
+          <img id="wechat_qr" src="/blog/images/wechatpay.png" alt="Anron WeChat Pay">
+          
+        </div>
+      
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    
+    
+      
+
+    
+
+    
+    
+      <div class="note success"><p>web 开发细节之类的知识已经逐步完善到<a href="https://github.com/anran758/Front-End-Lab" target="_blank" rel="noopener">Front-End-Lab</a> 这个仓库。以后可以作为一个知识体系，根据目录去找想要了解的知识或问题~</p></div>
+    
+
+    <div>
+      
+        
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Anron
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://anran758.github.io/blog/2017/07/16/array-method-test/" title="【js】数组方法深入研究与练习">https://anran758.github.io/blog/2017/07/16/array-method-test/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/blog/tags/javascript/" rel="tag"># javascript</a>
+          
+            <a href="/blog/tags/算法/" rel="tag"># 算法</a>
+          
+            <a href="/blog/tags/ffc/" rel="tag"># ffc</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/2017/08/21/js-common-regexp/" rel="prev" title="速查正则表达式">
+                速查正则表达式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
 
     </div>
@@ -700,11 +893,35 @@
   
   </article>
 
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   </div>
 
 
           </div>
           
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div id="container"></div>
+      <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+      <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+      <script>var gitment=new Gitment({id:"init_"+Date.now(),owner:"anran758",repo:"gitment-comments",oauth:{client_id:"a35e4aa0db5b5a7bcc2f",client_secret:"a19ef2a9debab8747a6e723c1eff1141213fe101"}});gitment.render("container")</script>
+
+  </div>
+
+
+        </div>
+        
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
     
       <div class="tabs tabs-comment">
         <ul class="nav-tabs">
@@ -768,6 +985,10 @@
   
 
         </div>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
           
   
   <div class="sidebar-toggle">
@@ -778,6 +999,244 @@
     </div>
   </div>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image" src="https://avatars3.githubusercontent.com/u/23024075?s=96&v=4" alt="Anron">
+          <p class="site-author-name" itemprop="name">Anron</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+           
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/blog/archives">
+                <span class="site-state-item-count">43</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/blog/categories/index.html">
+                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/blog/tags/index.html">
+                <span class="site-state-item-count">72</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        <div class="motion-element link-line">
+         
+
+          
+            <div class="feed-link block-item">
+              <a href="/blog/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                订阅博客
+              </a>
+            </div>
+          
+        </div>
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/anran758/blog" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/u/3833726651" target="_blank" title="微博">
+                  
+                    <i class="fa fa-fw fa-weibo"></i>
+                  
+                  微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://segmentfault.com/u/anran758/" target="_blank" title="Segmentfault">
+                  
+                    <i class="fa fa-fw fa-code"></i>
+                  
+                  Segmentfault
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://codepen.io/anran758/" target="_blank" title="Codepen">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  Codepen
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-block">
+            <div class="links-of-blogroll-title">
+              <i class="fa fa-fw fa-book"></i>
+              优质博客
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.zhangxinxu.com/" title="张鑫旭" target="_blank">张鑫旭</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.liaoxuefeng.com/" title="廖雪峰" target="_blank">廖雪峰</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://isux.tencent.com/" title="ISUX" target="_blank">ISUX</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://eux.baidu.com/" title="百度EUX" target="_blank">百度EUX</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.alloyteam.com/" title="Alloyteam" target="_blank">Alloyteam</a>
+                </li>
+              
+            </ul>
+          </div>
+        
+
+        
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-wikipedia-w"></i>
+      百科全书
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://caniuse.com/" title="Caniuse - CSS兼容性" target="_blank">Caniuse - CSS兼容性</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://developer.mozilla.org/zh-CN/" title="MDN - Web文档" target="_blank">MDN - Web文档</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+
+  <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-wrench"></i>
+      常用工具
+    </div>
+    <ul class="links-of-blogroll-list">
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://jsbin.com/?js,console,output" title="JSBin" target="_blank">JSBin</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://codepen.io/" title="codepen" target="_blank">codepen</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://www.easy-mock.com/" title="Easy-mock" target="_blank">Easy-mock</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="http://autoprefixer.github.io/" title="Autoprefixer" target="_blank">Autoprefixer</a>
+        </li>
+      
+        <li class="links-of-blogroll-item">
+          <a href="https://tinypng.com/" title="压缩图片 - tinypng" target="_blank">压缩图片 - tinypng</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+
+      </section>
+
+      
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.</span> <span class="nav-text">目录</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#回文处理"><span class="nav-number">1.1.</span> <span class="nav-text">回文处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#首个单词字母大写"><span class="nav-number">1.2.</span> <span class="nav-text">首个单词字母大写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#返回数组最大的数字"><span class="nav-number">1.3.</span> <span class="nav-text">返回数组最大的数字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#检查字符串结尾"><span class="nav-number">1.4.</span> <span class="nav-text">检查字符串结尾</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复输出字符串"><span class="nav-number">1.5.</span> <span class="nav-text">重复输出字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#截断字符串"><span class="nav-number">1.6.</span> <span class="nav-text">截断字符串</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割数组"><span class="nav-number">1.7.</span> <span class="nav-text">分割数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#过滤数组假值"><span class="nav-number">1.8.</span> <span class="nav-text">过滤数组假值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#摧毁指定数组"><span class="nav-number">1.9.</span> <span class="nav-text">摧毁指定数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组排序并找出元素索引"><span class="nav-number">1.10.</span> <span class="nav-text">数组排序并找出元素索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#凯撒密码"><span class="nav-number">1.11.</span> <span class="nav-text">凯撒密码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sum-All-Numbers-in-a-Range"><span class="nav-number">1.12.</span> <span class="nav-text">Sum All Numbers in a Range</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#非数组方法"><span class="nav-number">1.12.1.</span> <span class="nav-text">非数组方法</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   <aside class="sidebar">
     <div class="sidebar-inner">
         
@@ -902,11 +1361,119 @@
   <div id="sidebar-dimmer"></div>
 
 
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <div class="copyright">
+  <div class="theme-info">
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Anron</span>
+    <div class="powered-by"></div>
+  </div>
+
+  <div class="theme-info">
+    <span class="post-count">全站共59.3k字</span>
+    <div class="powered-by"></div>
+  </div>
+
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2019</span>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/blog/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/blog/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
         <div class="copyright">&copy; 2017 – <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
@@ -1045,10 +1612,24 @@
       </div>
     </footer>
   </div>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
   
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+
+	
+
+
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   <script src="/blog/lib/anime.min.js?v=3.1.0"></script>
   <script src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
@@ -1056,10 +1637,19 @@
 <script src="/blog/js/utils.js?v=7.4.0"></script><script src="/blog/js/motion.js?v=7.4.0"></script>
 <script src="/blog/js/schemes/muse.js?v=7.4.0"></script>
 <script src="/blog/js/next-boot.js?v=7.4.0"></script><script src="/blog/js/bookmark.js?v=7.4.0"></script>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
 
 
   
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   <script>
     (function(){
       var bp = document.createElement('script');
@@ -1069,11 +1659,27 @@
       s.parentNode.insertBefore(bp, s);
     })();
   </script>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
 
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  
+
+
+
+
+
+  
+=======
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   <script>
   if (CONFIG.page.isPost) {
     wpac_init = window.wpac_init || [];
@@ -1100,22 +1706,62 @@
   <script src="/blog/js/local-search.js?v=7.4.0"></script>
 
 
+<<<<<<< HEAD
+
+
+
+
+=======
+>>>>>>> blog/master
 
 
 
 
 
 
+<<<<<<< HEAD
+  
+
+  <script type="text/javascript">var isfetched=!1,search_path="search.xml";0==search_path.length&&(search_path="search.xml");var path="/blog/"+search_path;function proceedsearch(){$("body").append('<div class="search-popup-overlay local-search-pop-overlay"></div>').css("overflow","hidden"),$(".popup").toggle()}var searchFunc=function(e,t,a){"use strict";$.ajax({url:e,dataType:"xml",async:!0,success:function(e){isfetched=!0,$(".popup").detach().appendTo(".header-inner");var r=$("entry",e).map(function(){return{title:$("title",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),c=document.getElementById(t),s=document.getElementById(a);c.addEventListener("input",function(){var e=0,t='<ul class="search-result-list">',a=this.value.trim().toLowerCase().split(/[\s\-]+/);s.innerHTML="",this.value.trim().length>1&&r.forEach(function(r){var c=!1,s=r.title.trim().toLowerCase(),o=r.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),n=decodeURIComponent(r.url),i=-1,l=-1,p=-1;if(""!=s&&a.forEach(function(e,t){i=s.indexOf(e),l=o.indexOf(e),(i>=0||l>=0)&&(c=!0,0==t&&(p=l))}),c){e+=1,t+="<li><a href='"+n+"' class='search-result-title'>"+s+"</a>";var h=r.content.trim().replace(/<[^>]+>/g,"");if(p>=0){var u=p-20,d=p+80;u<0&&(u=0),0==u&&(d=50),d>h.length&&(d=h.length);var f=h.substring(u,d);a.forEach(function(e){var t=new RegExp(e,"gi");f=f.replace(t,'<b class="search-keyword">'+e+"</b>")}),t+='<p class="search-result">'+f+"...</p>"}t+="</li>"}}),t+="</ul>",0==e&&(t='<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'),""==a&&(t='<div id="no-result"><i class="fa fa-search fa-5x" /></div>'),s.innerHTML=t}),proceedsearch()}})};$(".popup-trigger").click(function(e){e.stopPropagation(),0==isfetched?searchFunc(path,"local-search-input","local-search-result"):proceedsearch()}),$(".popup-btn-close").click(function(e){$(".popup").hide(),$(".local-search-pop-overlay").remove(),$("body").css("overflow","")}),$(".popup").click(function(e){e.stopPropagation()})</script>
+=======
+
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
 
 
 
 
+
+<<<<<<< HEAD
+=======
+  
+
+  
+<<<<<<< HEAD
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("QrxRhKL4BgNphcY1TiSNE4oL-gzGzoHsz","ToJdukQb4M9DfdjLminRBwHq")</script>
+  <script>function showTime(e){var t=new AV.Query(e),n=[],o=$(".leancloud_visitors");o.each(function(){n.push($(this).attr("id").trim())}),t.containedIn("url",n),t.find().done(function(e){var t=".leancloud-visitors-count";if(0!==e.length){for(var i=0;i<e.length;i++){var s=e[i],r=s.get("url"),l=s.get("time"),c=document.getElementById(r);$(c).find(t).text(l)}for(i=0;i<n.length;i++){r=n[i],c=document.getElementById(r);var u=$(c).find(t);""==u.text()&&u.text(0)}}else o.find(t).text(0)}).fail(function(e,t){console.log("Error: "+t.code+" "+t.message)})}function addCount(e){var t=$(".leancloud_visitors"),n=t.attr("id").trim(),o=t.attr("data-flag-title").trim(),i=new AV.Query(e);i.equalTo("url",n),i.find({success:function(t){if(t.length>0){var i=t[0];i.fetchWhenSave(!0),i.increment("time"),i.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to save Visitor num, with error message: "+t.message)}})}else{var s=new e,r=new AV.ACL;r.setPublicReadAccess(!0),r.setPublicWriteAccess(!0),s.setACL(r),s.set("title",o),s.set("url",n),s.set("time",1),s.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to create")}})}},error:function(e){console.log("Error:"+e.code+" "+e.message)}})}$(function(){var e=AV.Object.extend("Counter");1==$(".leancloud_visitors").length?addCount(e):$(".post-title-link").length>1&&showTime(e)})</script>
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
+
+
+
+  
+<<<<<<< HEAD
+
+  
+
+=======
+<script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script>
 
 
   
 
   
 
+  <script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script></body></html>
+=======
+
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
   
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
@@ -1186,3 +1832,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
+=======
+>>>>>>> blog/master
+>>>>>>> d5b24ed8c7e78b41b565ec9114cc6ed872d92b89
