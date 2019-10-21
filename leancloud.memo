@@ -20,6 +20,7 @@
 {"title":"深入理解之排序二叉树","url":"/blog/2018/01/10/深入学习之排序二叉树/"},
 {"title":"性能优化 - 基础的性能优化","url":"/blog/2018/01/13/性能优化-前端性能优化/"},
 {"title":"性能优化 - 回流与重绘","url":"/blog/2018/01/15/性能优化-回流与重汇/"},
+{"title":"性能优化 - 回流与重绘的调试与优化","url":"/blog/2018/01/15/性能优化-回流与重汇/"},
 {"title":"为什么我们要选用 Vue/React/Angular 进行开发","url":"/blog/2018/01/23/JavaScript-你为什么会放弃JQuery而选用Vue-React-Angular进行开发/"},
 {"title":"走进 web 移动端开发","url":"/blog/2018/01/25/web-走进web移动开发/"},
 {"title":"你可能不知道的 console","url":"/blog/2018/01/30/js-console-may-not-kown/"},
